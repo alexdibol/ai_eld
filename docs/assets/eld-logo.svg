@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-labelledby="t d">
+<title id="t">Escudo de la Escuela Libre de Derecho</title>
+<desc id="d">Escudo ELD, fundada en 1912</desc>
+<g fill="none" stroke="#ffffff" stroke-width="12" stroke-linejoin="round">
+  <path d="M210 28 C150 74 92 78 72 78 C75 255 112 341 210 410 C308 341 345 255 348 78 C328 78 270 74 210 28 Z"/>
+  <path d="M210 31 L210 218"/>
+  <path d="M77 118 L210 218 L343 118"/>
+  <path d="M210 218 L210 407"/>
+</g>
+<g fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+  <text x="137" y="180" font-size="78" font-weight="700">E</text>
+  <text x="284" y="180" font-size="78" font-weight="700">L</text>
+  <text x="210" y="325" font-size="82" font-weight="700">D</text>
+</g>
+<g transform="translate(34 397)">
+  <path d="M40 10 L310 10 L338 40 L310 39 L310 72 L40 72 L40 39 L12 40 Z" fill="#ffffff"/>
+  <path d="M40 10 L12 40 L40 39 M310 10 L338 40 L310 39" fill="none" stroke="#ffffff" stroke-width="9"/>
+  <text x="175" y="54" font-size="28" font-weight="700" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle" fill="#152942" letter-spacing="2">FUNDADA EN</text>
+</g>
+<text x="210" y="505" fill="#ffffff" font-size="58" font-weight="700" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle" letter-spacing="6">1912</text>
+</svg>
