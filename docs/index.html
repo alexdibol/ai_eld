@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Escuela Libre de Derecho | Lo que un profesional del Derecho debe saber sobre IA</title>
-<meta name="description" content="Presentación magistral de Alejandro Reynoso en la Escuela Libre de Derecho sobre inteligencia artificial, profesión jurídica, sistemas inteligentes e instituciones. Incluye discurso, deck y un caso práctico con un enjambre de 50 agentes para elaborar una iniciativa de reforma a la Ley del Mercado de Valores.">
+<meta name="description" content="Presentación magistral de Alejandro Reynoso en la Escuela Libre de Derecho sobre inteligencia artificial y profesión jurídica. Incluye discurso, deck y dos casos de estudio: un enjambre de 50 agentes y un Legal Second Brain para investigación jurídica compleja.">
 <meta name="theme-color" content="#152942">
 <meta property="og:title" content="Lo que un profesional del Derecho debe saber sobre IA">
-<meta property="og:description" content="El Derecho frente a una nueva forma de inteligencia. Discurso, deck y caso práctico de 50 agentes en la elaboración de una iniciativa de reforma a la Ley del Mercado de Valores.">
+<meta property="og:description" content="El Derecho frente a una nueva forma de inteligencia. Discurso, deck y dos casos de estudio sobre inteligencia distribuida y conocimiento jurídico estructurado.">
 <meta property="og:type" content="website">
 <style>
 :root{
@@ -108,6 +108,28 @@ section{padding:65px 0}
 .case-card .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
 .case-card .links a{font-size:12px;border:1px solid #70839a;padding:7px 10px;border-radius:3px;color:#fff}
 .case-card .links a:hover{background:#263e5d;text-decoration:none}
+.case-intro{background:#fff;border-top:1px solid var(--line);padding:58px 0 46px}
+.case-intro-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:60px;align-items:end}
+.case-intro h2{margin-top:12px}
+.case-intro p{font-size:14px}
+.case-label{display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#efc67e}
+.case-label:before{content:"";width:26px;height:1px;background:#efc67e}
+.second-case{background:#eef3f7;color:var(--ink)}
+.second-case .eyebrow{color:#936619}
+.second-case h2{color:var(--ink)}
+.second-case .case-lead{color:var(--muted)}
+.second-case .case-card{background:#fff;border-color:#cfd8e1}
+.second-case .case-card h3{color:var(--ink)}
+.second-case .case-card p{color:var(--muted)}
+.second-case .case-card .tag{color:#936619}
+.second-case .case-card .links a{color:var(--blue);border-color:#cbd6e0;background:#f9fbfc}
+.second-case .case-card .links a:hover{background:#e7eef4}
+.duality{background:#fff;border-bottom:1px solid var(--line)}
+.duality-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.duality-card{border:1px solid var(--line);border-radius:7px;padding:28px;background:#fff}
+.duality-card span{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#9b6d1d;font-weight:700}
+.duality-card h3{font:400 27px Georgia,serif;margin:12px 0}
+.duality-card p{font-size:13px}
 
 .questions{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:30px}
 .question{background:#fff;border:1px solid var(--line);border-radius:7px;padding:25px}
@@ -141,6 +163,7 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
   .hero-aside{max-width:650px}
   .steps{grid-template-columns:repeat(3,1fr)}
   .case-grid{grid-template-columns:1fr}
+  .case-intro-grid,.duality-grid{grid-template-columns:1fr}
   .questions{grid-template-columns:1fr 1fr}
   .principle-grid{grid-template-columns:1fr}
   .section-head{display:block}
@@ -177,7 +200,7 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
     <nav aria-label="Navegación principal">
       <a href="#materiales">Materiales</a>
       <a href="#recorrido">Recorrido</a>
-      <a href="#caso">Caso práctico</a>
+      <a href="#casos">Casos de estudio</a>
       <a href="https://github.com/alexdibol/ai_eld">Repositorio ↗</a>
     </nav>
   </div>
@@ -212,7 +235,7 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
 
   <div class="introbar">
     <div class="wrap">
-      <p><strong>Esta página acompaña una presentación magistral en la Escuela Libre de Derecho de México.</strong> El discurso constituye el eje intelectual; el deck ofrece el soporte visual; y el caso de 50 agentes permite observar cómo estas ideas se traducen en una arquitectura aplicada al diseño jurídico.</p>
+      <p><strong>Esta página acompaña una presentación magistral en la Escuela Libre de Derecho de México.</strong> El discurso constituye el eje intelectual; el deck ofrece el soporte visual; y dos casos de estudio muestran dos rutas distintas hacia capacidades jurídicas superiores: inteligencia distribuida mediante enjambres de agentes y conocimiento estructurado mediante un Second Brain.</p>
     </div>
   </div>
 
@@ -221,9 +244,9 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
       <div class="section-head">
         <div>
           <p class="eyebrow">Para acompañar la conferencia</p>
-          <h2>Tres piezas.<br>Una sola conversación.</h2>
+          <h2>Discurso, deck<br>y dos casos.</h2>
         </div>
-        <p>El mejor modo de utilizar este repositorio es avanzar del argumento a la visualización y, finalmente, al experimento. El objetivo no es mostrar tecnología por sí misma, sino examinar qué cambia en la arquitectura del Derecho.</p>
+        <p>El recorrido avanza del argumento a la visualización y después a dos experimentos complementarios. Uno amplía la inteligencia mediante agentes especializados; el otro amplía el conocimiento disponible mediante memoria externa, grafos y navegación autónoma de evidencia.</p>
       </div>
 
       <div class="materials">
@@ -269,17 +292,28 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
     </section>
   </div>
 
-  <section class="case" id="caso">
+  <section class="case-intro" id="casos">
+    <div class="wrap case-intro-grid">
+      <div>
+        <p class="eyebrow">Dos casos de estudio</p>
+        <h2>Dos caminos hacia<br>capacidades superiores.</h2>
+      </div>
+      <p>La conferencia se vuelve concreta en dos laboratorios complementarios. El primero pregunta qué ocurre cuando coordinamos muchas inteligencias especializadas. El segundo pregunta qué ocurre cuando una inteligencia puede navegar un cuerpo de conocimiento externo, estructurado e interconectado.</p>
+    </div>
+  </section>
+
+  <section class="case" id="caso-agentes">
     <div class="wrap">
-      <p class="eyebrow">Caso práctico · 50 agentes van al Congreso</p>
+      <span class="case-label">Caso I · Superior intelligence</span>
+      <p class="eyebrow" style="margin-top:12px">50 agentes van al Congreso</p>
       <h2>¿Puede un enjambre de agentes participar en la elaboración de una iniciativa de reforma legal?</h2>
-      <p class="case-lead">El experimento organiza 50 agentes especializados alrededor de una tarea común: producir un proyecto de decreto que reforma y adiciona diversas disposiciones de la Ley del Mercado de Valores. El interés está tanto en el resultado como en la arquitectura de deliberación que lo produce.</p>
+      <p class="case-lead">El experimento organiza 50 agentes especializados alrededor de una tarea común: producir un proyecto de decreto que reforma y adiciona diversas disposiciones de la Ley del Mercado de Valores. La capacidad surge de la especialización, la deliberación distribuida y la coordinación.</p>
 
       <div class="case-grid">
         <article class="case-card">
           <span class="tag">Arquitectura y metodología</span>
           <h3>La monografía</h3>
-          <p>Explica la lógica del experimento, la distribución de especialidades, la coordinación del enjambre y los mecanismos utilizados para transformar un problema legislativo complejo en un proceso estructurado de análisis.</p>
+          <p>Explica la lógica del enjambre, la distribución de especialidades, la coordinación de roles y la metodología utilizada para convertir un problema legislativo complejo en un proceso estructurado de deliberación.</p>
           <div class="links">
             <a href="https://github.com/alexdibol/ai_swarms_applications/blob/main/50%20agents%20go%20to%20congress.pdf">Leer la monografía ↗</a>
           </div>
@@ -288,7 +322,7 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
         <article class="case-card">
           <span class="tag">Sistema reproducible</span>
           <h3>El notebook</h3>
-          <p>Permite inspeccionar la arquitectura computacional del ejercicio: roles, instrucciones, coordinación, revisión, agregación y supervisión del trabajo de los agentes.</p>
+          <p>Permite inspeccionar agentes, instrucciones, coordinación, revisión, agregación y supervisión. El sistema muestra que inteligencia colectiva no significa ausencia de arquitectura o gobierno.</p>
           <div class="links">
             <a href="https://github.com/alexdibol/ai_swarms_applications/blob/main/notebooks/NB_50_AGENT_PRODUCE_A_NEW%20SECURITIES_LAW.ipynb">Ver el notebook ↗</a>
           </div>
@@ -297,19 +331,88 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
         <article class="case-card">
           <span class="tag">Producto jurídico</span>
           <h3>La iniciativa</h3>
-          <p>El repositorio contiene el resultado del experimento: un proyecto de iniciativa en materia de Ley del Mercado de Valores, que permite comparar directamente arquitectura, proceso y producto jurídico.</p>
+          <p>El producto del experimento permite comparar directamente arquitectura del enjambre, proceso de deliberación y resultado jurídico.</p>
           <div class="links">
             <a href="https://github.com/alexdibol/ai_eld/blob/main/LMV%20Project.pdf">Abrir la iniciativa ↗</a>
           </div>
         </article>
 
         <article class="case-card">
-          <span class="tag">Pregunta pedagógica</span>
-          <h3>Lo importante no es automatizar</h3>
-          <p>El caso permite discutir qué debe delegarse, qué requiere revisión humana, cómo se verifica la autoridad de las fuentes y quién conserva la responsabilidad por el resultado.</p>
+          <span class="tag">Ecosistema relacionado</span>
+          <h3>AI Swarms Applications</h3>
+          <p>El caso forma parte de una colección más amplia de experimentos sobre enjambres, coordinación y diseño de instituciones adaptativas.</p>
           <div class="links">
             <a href="https://alexdibol.github.io/ai_swarms_applications/">Explorar AI Swarms Applications ↗</a>
           </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="case second-case" id="caso-second-brain">
+    <div class="wrap">
+      <span class="case-label" style="color:#936619">Caso II · Superior knowledge + intelligence</span>
+      <p class="eyebrow" style="margin-top:12px">The Legal Second Brain</p>
+      <h2>¿Qué ocurre cuando la inteligencia puede navegar un sistema complejo de conocimiento jurídico?</h2>
+      <p class="case-lead">Este laboratorio sustituye la idea de una simple carpeta de documentos por un Second Brain: un vault jurídico externo, estructurado e interconectado. El sistema combina un corpus sintético de 350 documentos, cinco grafos de relaciones, selección de semillas y un bucle autónomo acotado que decide qué evidencia investigar a continuación.</p>
+
+      <div class="case-grid">
+        <article class="case-card">
+          <span class="tag">Marco conceptual</span>
+          <h3>La monografía</h3>
+          <p>Desarrolla memoria externa, grafos de conocimiento, navegación endógena, adquisición adaptativa de evidencia, incertidumbre y trazabilidad. La proposición central: autonomía es selección adaptativa bajo restricciones explícitas, no acción irrestricta.</p>
+          <div class="links">
+            <a href="https://github.com/alexdibol/ai_eld/blob/main/second_brain/second_brain_legal_github.pdf">Leer la monografía ↗</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <span class="tag">Arquitectura visual</span>
+          <h3>La presentación Beamer</h3>
+          <p>Presenta visualmente la transición desde recuperación semántica hacia investigación jurídica guiada por relaciones, evidencia, procedencia y preguntas todavía no resueltas.</p>
+          <div class="links">
+            <a href="https://github.com/alexdibol/ai_eld/blob/main/second_brain/slides_second_brain_legal_github.pdf">Abrir las slides ↗</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <span class="tag">Laboratorio reproducible</span>
+          <h3>El Colab notebook</h3>
+          <p>Implementa el vault, los grafos y el proceso de investigación. Hace observable por qué se consulta una fuente, qué relación conduce a ella, qué incertidumbre permanece y cómo cambia el siguiente paso de investigación.</p>
+          <div class="links">
+            <a href="https://github.com/alexdibol/ai_eld/blob/main/second_brain/THE_LEGAL_SECOND_BRAIN.ipynb">Ver el notebook ↗</a>
+            <a href="https://colab.research.google.com/github/alexdibol/ai_eld/blob/main/second_brain/THE_LEGAL_SECOND_BRAIN.ipynb">Abrir en Colab ↗</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <span class="tag">Idea pedagógica</span>
+          <h3>De buscar a investigar</h3>
+          <p>La pregunta ya no es sólo qué texto se parece a la consulta, sino qué evidencia debe investigarse después dadas las relaciones descubiertas, las hipótesis abiertas y el presupuesto de investigación disponible.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="duality">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">La comparación</p>
+          <h2>Inteligencia superior.<br>Conocimiento superior.</h2>
+        </div>
+        <p>Los dos casos no compiten. Se complementan. Juntos muestran por qué el futuro de la IA jurídica dependerá tanto de la organización de la inteligencia como de la arquitectura del conocimiento.</p>
+      </div>
+      <div class="duality-grid">
+        <article class="duality-card">
+          <span>Caso I</span>
+          <h3>Más inteligencia coordinada</h3>
+          <p>Multiplicamos perspectivas especializadas y las organizamos en un sistema de deliberación. El desafío es coordinar, integrar, limitar facultades y conservar responsabilidad.</p>
+        </article>
+        <article class="duality-card">
+          <span>Caso II</span>
+          <h3>Más conocimiento utilizable</h3>
+          <p>Externalizamos memoria, relaciones y procedencia para que la inteligencia navegue conocimiento complejo. El desafío es seleccionar evidencia, controlar incertidumbre y mantener una trayectoria auditable.</p>
         </article>
       </div>
     </div>
@@ -322,7 +425,7 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
           <p class="eyebrow">La discusión que importa</p>
           <h2>Cuatro preguntas<br>para el jurista.</h2>
         </div>
-        <p>El experimento adquiere valor cuando obliga a abandonar la pregunta superficial —“¿puede hacerlo?”— y formular preguntas propiamente institucionales.</p>
+        <p>Los dos experimentos adquieren valor cuando obligan a abandonar la pregunta superficial —“¿puede hacerlo?”— y formular preguntas sobre conocimiento, autoridad, evidencia, límites y responsabilidad.</p>
       </div>
 
       <div class="questions">
@@ -367,6 +470,7 @@ footer p{font-size:11px;max-width:920px;margin-top:17px;color:#5b697a}
         <a href="https://github.com/alexdibol/ai_eld/blob/main/Discurso_ELD.pdf">Discurso</a>
         <a href="https://github.com/alexdibol/ai_eld/blob/main/Slides%20ELD.pdf">Deck</a>
         <a href="https://github.com/alexdibol/ai_eld/blob/main/LMV%20Project.pdf">Iniciativa</a>
+        <a href="https://github.com/alexdibol/ai_eld/tree/main/second_brain">Second Brain</a>
         <a href="https://github.com/alexdibol/ai_eld">GitHub</a>
         <a href="#contenido">Volver al inicio ↑</a>
       </nav>
